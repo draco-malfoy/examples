@@ -28,7 +28,7 @@ jobs:
         ./gradlew test
 
     - name: Run tests with Gradle and Launchable
-      working-directory: ./gradle
+      working-directory: ./
       run: |
         BUILD_NAME=${GITHUB_RUN_ID:=local-$(date +%s)}
         pip3 install --user launchable~=1.0 > /dev/null
