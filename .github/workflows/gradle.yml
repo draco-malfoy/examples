@@ -23,7 +23,9 @@ jobs:
 
     - name: Full build
       working-directory: ./
-      run: ./gradlew test
+      run: |
+        chmod +x ./gradlew
+        ./gradlew test
 
     - name: Run tests with Gradle and Launchable
       working-directory: ./gradle
