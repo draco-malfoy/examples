@@ -5,8 +5,7 @@ on:
     branches: [ master ]
 
 env:
-  LAUNCHABLE_ORGANIZATION: "examples"
-  LAUNCHABLE_WORKSPACE: "gradle"
+  LAUNCHABLE_TOKEN: v1:mt/demo-test:1fb63d4cbd8648108a8b144f45630b49
 
 jobs:
   build:
