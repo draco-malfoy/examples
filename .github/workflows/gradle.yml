@@ -20,15 +20,15 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-          
+
+    - name: Full build
+      working-directory: ./gradle
+      run: ./gradlew test
+
     - name: Run tests with Gradle and Launchable
       run: ./pre-merge.sh
       working-directory: ./gradle
       env:
         GITHUB_PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }} 
-        
-    - name: Full build
-      working-directory: ./gradle
-      run: ./gradlew test
 
        
