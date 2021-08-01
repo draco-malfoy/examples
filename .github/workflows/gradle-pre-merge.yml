@@ -1,9 +1,8 @@
 name: Efficient pull request validation for Gradle example
 
 on:
-  pull_request:
-    paths:
-    - gradle/**
+  push:
+    branches: [ master ]
 
 env:
   LAUNCHABLE_ORGANIZATION: "examples"
