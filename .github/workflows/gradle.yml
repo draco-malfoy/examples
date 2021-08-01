@@ -22,8 +22,8 @@ jobs:
         java-version: 1.8
 
     - name: Full build
-      working-directory: .
-      run: sudo ./gradlew test
+      working-directory: ./
+      run: ./gradlew test
 
     - name: Run tests with Gradle and Launchable
       working-directory: ./gradle
