@@ -29,5 +29,6 @@ jobs:
         
     - name: Full build
       working-directory: ./gradle
-      run: ./ci.sh
+      run: ./gradlew test
+
        
